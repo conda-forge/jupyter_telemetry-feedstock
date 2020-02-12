@@ -1,5 +1,5 @@
 {% set name = "jupyter_telemetry" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 507d66f70ce89fde1c7541d82d74c243136d7e3a9105487ec6ca0dc8cb836b7b
+  sha256: d3eaac14be17510a4d288f3737580107ce14eef543e6133d56654d3f0e742b9b
 
 build:
   noarch: python
