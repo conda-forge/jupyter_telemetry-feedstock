@@ -1,5 +1,5 @@
 {% set name = "jupyter_telemetry" %}
-{% set version = "0.0.5" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d3eaac14be17510a4d288f3737580107ce14eef543e6133d56654d3f0e742b9b
+  sha256: 445c613ae3df70d255fe3de202f936bba8b77b4055c43207edf22468ac875314
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Telemetry for Jupyter Applications and extensions.'
+  summary: Telemetry for Jupyter Applications and extensions.
 
   description: |
     Telemetry provides a configurable traitlets object, EventLog,
