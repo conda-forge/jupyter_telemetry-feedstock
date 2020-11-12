@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - jupyter_telemetry
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://jupyter-telemetry.readthedocs.io
