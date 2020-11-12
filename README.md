@@ -5,9 +5,13 @@ Home: https://jupyter-telemetry.readthedocs.io
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyter_telemetry-feedstock/blob/master/LICENSE.txt)
 
 Summary: Telemetry for Jupyter Applications and extensions.
+
+Development: https://github.com/jupyter/telemetry
+
+Documentation: https://jupyter-telemetry.readthedocs.io
 
 Telemetry provides a configurable traitlets object, EventLog,
 for structured event-logging in Python.
@@ -120,5 +124,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@consideratio](https://github.com/consideratio/)
 * [@minrk](https://github.com/minrk/)
 

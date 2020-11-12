@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -28,6 +28,10 @@ requirements:
 test:
   imports:
     - jupyter_telemetry
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://jupyter-telemetry.readthedocs.io
